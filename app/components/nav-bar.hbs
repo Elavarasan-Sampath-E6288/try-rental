@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <LinkTo class="navbar-brand" @route="index" href="#">
+            <h2>Try Rentals</h2>
+        </LinkTo>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <LinkTo @route="about" class="menu-about">
+                    <h5>About</h5>
+                </LinkTo>
+                <LinkTo @route="contact" class="menu-contact">
+                    <h5>Contact</h5>
+                </LinkTo>
+            </div>
+        </div>
+    </div>
+</nav>

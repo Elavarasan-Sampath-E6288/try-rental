@@ -1,0 +1,14 @@
+<div class={{if this.showLarge 'rental-img-large' 'rental-img'}}>
+    {{#if this.showLarge}}
+    <img ...attributes style="width: 100%"/>
+    {{else}}
+    <img ...attributes />
+    {{/if}}
+    <button type="button" class="btn btn-link" {{on 'click' this.toggleDisplay}}>
+        {{#if this.showLarge}}
+            Show Small
+        {{else}}
+            Show Large
+        {{/if}}
+    </button>
+</div>

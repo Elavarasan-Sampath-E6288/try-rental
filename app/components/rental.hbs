@@ -1,0 +1,21 @@
+<article class="rental-list">
+    <Rental::Image class="rental-img" src={{@rental.image}} @showtoggle={{true}}/>
+    <div class="rental-details">
+        <h3><LinkTo @route="rental" @model={{@rental}}>
+        {{@rental.title}}
+      </LinkTo></h3>
+        <div class="info-item"><span>Owner:</span> {{@rental.owner}}</div>
+        <div class="info-item"><span>Type:</span> {{@rental.type}}</div>
+        <div class="info-item"><span>Location:</span> {{@rental.city}}</div>
+        <div class="info-item"><span>No of bed rooms:</span> {{@rental.bedrooms}}</div>
+    </div>
+    <Map
+    class="rental-map"
+        @lat="12.9804"
+        @lng="80.2531"
+        @zoom="12.7"
+        @width="200"
+        @height="200"
+        alt="A map of HolidayInn chennai"
+    />
+</article>

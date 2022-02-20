@@ -1,0 +1,31 @@
+<RentalHeader>
+    <h2>{{@rental.title}}</h2>
+    <p>Set in Chennai, this 5 star accommodation is one of the top Hotel in Chennai.
+        Located in Near US Consulate location this Chennai Hotel is rated 4.6/5 by 94 guest.
+        This Chennai Hotel offers Ironing Service, Gym and Bar. Apollo Hospital is very near to this Chennai Hotel.
+        Chennai International Airport is the nearest transit points to travel from the hotel. This Taj Hotels, Resorts & Palaces is highly recommended in this locality.</p>
+    <LinkTo @route="about" class="btn btn-primary">Book Now</LinkTo>
+</RentalHeader>
+
+<article class="rental-list detailed-view">
+    <Rental::Image class="rental-img" src={{@rental.image}} @showtoggle={{true}}/>
+    <div class="rental-details">
+        <h3><LinkTo @route="rental" @model={{@rental}}>
+        {{@rental.title}}
+      </LinkTo></h3>
+        <div class="info-item"><span>Owner:</span> {{@rental.owner}}</div>
+        <div class="info-item"><span>Type:</span> {{@rental.type}}</div>
+        <div class="info-item"><span>Location:</span> {{@rental.city}}</div>
+        <div class="info-item"><span>No of bed rooms:</span> {{@rental.bedrooms}}</div>
+        <div class="info-item">{{@rental.description}}</div>
+    </div>
+    <Map
+    class="rental-map"
+        @lat="12.9804"
+        @lng="80.2531"
+        @zoom="12.7"
+        @width="700"
+        @height="700"
+        alt="A map of HolidayInn chennai"
+    />
+</article>

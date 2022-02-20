@@ -21,6 +21,8 @@ module.exports = function (environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+    MAP_ACCESS_TOKEN:
+      'pk.eyJ1IjoiZWxhdmFyYXNhbi1zYW1wYXRoIiwiYSI6ImNrem13ZXh6MjAzbWQydnFzc3Q5cGo3Z3UifQ.DaHI9bqVPWKmSa35cbbfBg',
   };
 
   if (environment === 'development') {
