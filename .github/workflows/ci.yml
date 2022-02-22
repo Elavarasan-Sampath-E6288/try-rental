@@ -11,13 +11,3 @@ concurrency:
    group: ci-${{ github.head_ref || github.ref }}
    cancel-in-progress: true
 
-jobs:
-  lint:
-    name: "Lint"
-    runs-on: ubuntu-latest
-
-
-  test:
-    name: "Test"
-    runs-on: ubuntu-latest
-
